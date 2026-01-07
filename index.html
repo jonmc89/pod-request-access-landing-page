@@ -50,17 +50,24 @@
                         alt=""
                     />
                 </div>
-                <form action="" method="post">
+                <form id="form" action="">
                     <input
                         type="email"
                         aria-labelledby="email"
                         name="email"
-                        id="email"
+                        id="emailInput"
                         placeholder="Email address"
                     />
                     <button type="submit">Request Access</button>
                 </form>
+                <p id="errorMsg" class="error-msg">
+                    Oops!, Please check your email
+                </p>
+            </div>
+            <div id="successMsg" class="success-message">
+                <div class="sucess-text">Your request has been sent!</div>
             </div>
         </main>
+        <script src="./script.js" defer></script>
     </body>
 </html>
