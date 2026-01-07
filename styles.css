@@ -1,0 +1,17 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: #54e6af;
+    --blue950: #121725;
+    --blue900: #2c344b;
+    --blue600: #5a668a;
+    --blue300: #c2cbe5;
+    --white: #fff;
+    --red: #fb3e3e;
+}
