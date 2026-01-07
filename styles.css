@@ -8,6 +8,7 @@
 
 :root {
     --green: #54e6af;
+    --green-light: #78f9c8;
     --blue950: #121725;
     --blue900: #2c344b;
     --blue600: #5a668a;
@@ -16,11 +17,19 @@
     --red: #fb3e3e;
 }
 
+body {
+    font-family: "Chivo", Arial, Helvetica, sans-serif;
+}
+
 /* Main Styles */
 
 main {
+    align-items: center;
     background-color: var(--blue950);
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    justify-content: center;
     position: relative;
     width: 100%;
     z-index: 1;
@@ -39,5 +48,85 @@ main::before {
 }
 
 .main-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.25rem;
     position: relative;
+    width: 100%;
+}
+
+.main-logo {
+    margin-block-end: 3rem;
+}
+
+h1 {
+    color: var(--green);
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 110%;
+    margin-block-end: 1rem;
+    text-align: center;
+}
+
+span {
+    color: var(--white);
+}
+
+p {
+    color: var(--blue300);
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 150%;
+    margin-block-end: 2.5rem;
+    text-align: center;
+}
+
+.brand-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 2.5rem;
+    width: 100%;
+}
+
+.brand-logo {
+    height: auto;
+    width: 4rem;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+input,
+button {
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+input {
+    background-color: var(--blue900);
+    border: none;
+    color: var(--white);
+    outline: none;
+}
+
+button {
+    background-color: var(--green);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--green-light);
 }
