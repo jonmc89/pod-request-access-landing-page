@@ -62,6 +62,12 @@ main::before {
     }
 }
 
+@media screen and (min-width: 90rem) {
+    main {
+        padding: 10rem;
+    }
+}
+
 .img-tablet {
     display: none;
     height: 64rem;
@@ -74,6 +80,22 @@ main::before {
 
 @media screen and (min-width: 51.25rem) {
     .img-tablet {
+        display: block;
+    }
+}
+
+.img-desktop {
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (min-width: 90rem) {
+    .img-tablet {
+        display: none;
+    }
+
+    .img-desktop {
         display: block;
     }
 }
@@ -91,6 +113,11 @@ main::before {
 @media screen and (min-width: 51.25rem) {
     .img-pattern {
         display: block;
+    }
+}
+@media screen and (min-width: 90rem) {
+    .img-pattern {
+        transform: translate(0rem, -3rem);
     }
 }
 
@@ -113,6 +140,15 @@ main::before {
     }
 }
 
+@media screen and (min-width: 90rem) {
+    .main-content {
+        height: auto;
+        padding-top: 9rem;
+        padding-right: 18rem;
+        width: 70%;
+    }
+}
+
 .main-logo {
     margin-block-end: 3rem;
 }
@@ -120,6 +156,11 @@ main::before {
 @media screen and (min-width: 51.25rem) {
     .main-logo {
         margin-block-end: 12rem;
+    }
+}
+@media screen and (min-width: 90rem) {
+    .main-logo {
+        margin-block-end: 4rem;
     }
 }
 
