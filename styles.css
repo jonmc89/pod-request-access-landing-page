@@ -30,9 +30,18 @@ main {
     flex-direction: column;
     height: 100vh;
     justify-content: center;
+    overflow: hidden;
+    padding: 2.25rem;
     position: relative;
     width: 100%;
     z-index: 1;
+}
+
+@media screen and (min-width: 51.25rem) {
+    main {
+        align-items: start;
+        padding: 4rem;
+    }
 }
 
 main::before {
@@ -47,24 +56,77 @@ main::before {
     top: 0;
 }
 
+@media screen and (min-width: 51.25rem) {
+    main::before {
+        display: none;
+    }
+}
+
+.img-tablet {
+    display: none;
+    height: 64rem;
+    right: 0;
+    position: absolute;
+    top: 0;
+    transform: translateX(10rem);
+    width: auto;
+}
+
+@media screen and (min-width: 51.25rem) {
+    .img-tablet {
+        display: block;
+    }
+}
+
+.img-pattern {
+    bottom: 6rem;
+    display: none;
+    height: 8rem;
+    position: absolute;
+    right: 0;
+    transform: translate(9.5rem, -8rem);
+    width: auto;
+}
+
+@media screen and (min-width: 51.25rem) {
+    .img-pattern {
+        display: block;
+    }
+}
+
 .main-content {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2.25rem;
+    height: 60%;
     position: relative;
     width: 100%;
+}
+
+@media screen and (min-width: 51.25rem) {
+    .main-content {
+        background-color: var(--blue950);
+        padding-top: 8rem;
+        padding-right: 4rem;
+        width: 85%;
+    }
 }
 
 .main-logo {
     margin-block-end: 3rem;
 }
 
+@media screen and (min-width: 51.25rem) {
+    .main-logo {
+        margin-block-end: 12rem;
+    }
+}
+
 h1 {
     color: var(--green);
     font-weight: 200;
-    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 7vw, 3rem);
     line-height: 110%;
     margin-block-end: 1rem;
     text-align: center;
@@ -76,11 +138,50 @@ span {
 
 p {
     color: var(--blue300);
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 7vw, 1.4rem);
     font-weight: 100;
     line-height: 150%;
     margin-block-end: 2.5rem;
     text-align: center;
+}
+
+@media screen and (min-width: 51.25rem) {
+    h1,
+    p {
+        text-align: left;
+    }
+}
+
+.brand-form-container {
+    width: 100%;
+}
+
+.brand-form-container-desktop {
+    display: none;
+    width: 100%;
+}
+
+.form-desktop {
+    background-color: var(--blue900);
+    padding: 0 0.4rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 51.25rem) {
+    .brand-form-container {
+        display: none;
+    }
+
+    .brand-form-container-desktop {
+        display: block;
+    }
+
+    .form-desktop {
+        align-items: center;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .brand-container {
@@ -96,6 +197,12 @@ p {
     width: 4rem;
 }
 
+@media screen and (min-width: 51.25rem) {
+    .brand-logo {
+        width: 6rem;
+    }
+}
+
 form {
     align-items: center;
     display: flex;
@@ -106,11 +213,30 @@ form {
     width: 100%;
 }
 
+@media screen and (min-width: 51.25rem) {
+    form {
+        align-items: flex-start;
+    }
+}
+
 input,
 button {
     border-radius: 2rem;
     padding: 1rem 2rem;
     width: 100%;
+}
+
+@media screen and (min-width: 51.25rem) {
+    input,
+    button {
+        padding: 1.4rem;
+    }
+}
+
+.btn-desktop {
+    height: 3rem;
+    padding: 0.6rem 2rem;
+    width: 20rem;
 }
 
 input {

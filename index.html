@@ -20,6 +20,16 @@
     </head>
     <body>
         <main>
+            <img
+                class="img-tablet"
+                src="./assets/tablet/image-host.jpg"
+                alt=""
+            />
+            <img
+                class="img-pattern"
+                src="./assets/desktop/bg-pattern-dots.svg"
+                alt=""
+            />
             <img class="main-logo" src="./assets/desktop/logo.svg" alt="" />
             <div class="main-content">
                 <h1>PUBLISH YOUR PODCASTS <span>EVERYWHERE</span></h1>
@@ -28,41 +38,84 @@
                     distribute your podcast to Spotify, Apple Podcasts, Google
                     Podcasts, Pocket Casts and more!
                 </p>
-                <div class="brand-container">
-                    <img
-                        class="brand-logo"
-                        src="./assets/desktop/spotify.svg"
-                        alt=""
-                    />
-                    <img
-                        class="brand-logo"
-                        src="./assets/desktop/apple-podcast.svg"
-                        alt=""
-                    />
-                    <img
-                        class="brand-logo"
-                        src="./assets/desktop/google-podcasts.svg"
-                        alt=""
-                    />
-                    <img
-                        class="brand-logo"
-                        src="./assets/desktop/pocket-casts.svg"
-                        alt=""
-                    />
+                <div class="brand-form-container">
+                    <div class="brand-container">
+                        <img
+                            class="brand-logo"
+                            src="./assets/desktop/spotify.svg"
+                            alt=""
+                        />
+                        <img
+                            class="brand-logo"
+                            src="./assets/desktop/apple-podcast.svg"
+                            alt=""
+                        />
+                        <img
+                            class="brand-logo"
+                            src="./assets/desktop/google-podcasts.svg"
+                            alt=""
+                        />
+                        <img
+                            class="brand-logo"
+                            src="./assets/desktop/pocket-casts.svg"
+                            alt=""
+                        />
+                    </div>
+                    <form id="form" action="">
+                        <input
+                            type="email"
+                            aria-labelledby="email"
+                            name="email"
+                            id="emailInput"
+                            placeholder="Email address"
+                        />
+                        <button type="submit">Request Access</button>
+                    </form>
+                    <p id="errorMsg" class="error-msg">
+                        Oops!, Please check your email
+                    </p>
                 </div>
-                <form id="form" action="">
-                    <input
-                        type="email"
-                        aria-labelledby="email"
-                        name="email"
-                        id="emailInput"
-                        placeholder="Email address"
-                    />
-                    <button type="submit">Request Access</button>
-                </form>
-                <p id="errorMsg" class="error-msg">
-                    Oops!, Please check your email
-                </p>
+                <div class="brand-form-container-desktop">
+                    <form id="formDesktop" action="">
+                        <div id="formDesktopContainer" class="form-desktop">
+                            <input
+                                type="email"
+                                aria-labelledby="email"
+                                name="email"
+                                id="emailInputDesktop"
+                                placeholder="Email address"
+                            />
+                            <button class="btn-desktop" type="submit">
+                                Request Access
+                            </button>
+                        </div>
+                    </form>
+                    <p id="errorMsgDesktop" class="error-msg">
+                        Oops!, Please check your email
+                    </p>
+                    <div class="brand-container">
+                        <img
+                            class="brand-logo"
+                            src="./assets/desktop/spotify.svg"
+                            alt=""
+                        />
+                        <img
+                            class="brand-logo"
+                            src="./assets/desktop/apple-podcast.svg"
+                            alt=""
+                        />
+                        <img
+                            class="brand-logo"
+                            src="./assets/desktop/google-podcasts.svg"
+                            alt=""
+                        />
+                        <img
+                            class="brand-logo"
+                            src="./assets/desktop/pocket-casts.svg"
+                            alt=""
+                        />
+                    </div>
+                </div>
             </div>
             <div id="successMsg" class="success-message">
                 <div class="sucess-text">Your request has been sent!</div>
